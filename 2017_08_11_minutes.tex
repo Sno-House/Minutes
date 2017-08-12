@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{minutes}
+\usepackage{fullpage}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{textcomp}
+
+\minutesstyle{
+  columns = {1},
+  header =  {list},
+  contents = {true},
+}
+
+\fancypagestyle{creditfooter}{%
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[L]{\LaTeX:\ Bryan Ngo}
+\fancyfoot[C]{\thepage}
+}
+
+\begin{document}
+\begin{Minutes}{Sno-House\\Developer Meeting}
+\minutetaker{Bryan Ngo}
+\participant{%
+Bryan Ngo, %
+Justin Bermudez, %
+Kevin Cua, %
+Kevin Tran, %
+}
+
+\missingExcused{%
+Tyron Bandachit, %
+}
+
+\missingNoExcuse{%
+Ezra Salandanan, %
+Chris Payumo %
+}
+
+\minutesdate{August 11, 2017}
+
+\starttime{6:30pm}
+\endtime{8:30pm}
+
+\location{Bryan's House}
+
+\maketitle
+
+\topic{Coding Warm up}
+\begin{itemize}
+	\item Ransom note
+\end{itemize}
+
+\topic{Goals Re-alignmnet}
+\begin{itemize}
+	\item Let's re-est our goals.
+	\begin{itemize}
+		\item Prototype to be ready by Aug 18.
+		\item Final bot to be ready by Sep 1.
+	\end{itemize}
+	\item Change focus to single application (champ builds).
+\end{itemize}
+
+\topic{Go over API documentation}
+\begin{itemize}
+	\item Show where to find proper documentation for how to make API calls.
+	\item Cassiopeia examples can be found here: {https://github.com/meraki-analytics/cassiopeia}
+	\item Official Cassiopeia documentation (which is currently under construction) can be found here: {http://cassiopeia.readthedocs.io/en/latest/}
+\end{itemize}
+
+
+\thispagestyle{creditfooter}
+
+\end{Minutes}
+
+\end{document}
